@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -59,6 +60,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE':'django.db.backends.mysql',  
+        #'NAME': 'test',                      # Or path to database file if using sqlite3.  
+        #'USER': 'root',                      # Not used with sqlite3.  
+        #'PASSWORD': '65535',                  # Not used with sqlite3.  
+        #'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.  
+        #'PORT': '',                      # Set to empty string for default. Not used with sqlite3. 
     }
 }
 
